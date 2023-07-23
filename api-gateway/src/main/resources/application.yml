@@ -14,6 +14,16 @@ spring:
           uri: lb://user-service
           predicates:
             - Path=/api/user
+        - id: discovery-server
+          uri: http://localhost:8761
+          predicates:
+            - Path=/eureka/web
+          filters:
+            - SetPath=/
+        - id: discovery-server-static
+          uri: http://localhost:8761
+          predicates:
+            - Path=/eureka/**
 
 logging:
   level:

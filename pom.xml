@@ -17,7 +17,7 @@
 
     <modules>
         <module>user-service</module>
-        <module>discovery-service</module>
+        <module>discovery-server</module>
         <module>product-service</module>
 		<module>api-gateway</module>
 		<module>order-service</module>
