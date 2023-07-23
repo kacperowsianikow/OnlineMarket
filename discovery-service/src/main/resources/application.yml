@@ -1,0 +1,12 @@
+server:
+  port: 8761
+  error:
+    include-message: always
+    include-binding-errors: always
+
+eureka:
+  server:
+    port: 8761
+  client:
+    register-with-eureka: false
+    fetch-registry: false
